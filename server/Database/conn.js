@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const DB = "mongodb+srv://admin:admin123@cluster0.kg9sn.mongodb.net/StudentManagementSystem?retryWrites=true&w=majority";
+const DB = "CONNECTION URL";
 
 mongoose.connect(DB,{
     useNewUrlParser:true,
