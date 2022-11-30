@@ -1,0 +1,308 @@
+/* CSS for the login page */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+.gradient{
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+.height100vh{
+    height: 100vh;
+    background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.login-container{
+    height: 372px;
+    width: 100vw;
+    background: #2980B9;  
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+    background: linear-gradient(to right, #2980B9, #6DD5FA, #2980B9); 
+}
+
+.main_gradient{
+    background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main_inside{
+    border: 2px solid black;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form_gradient{
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #abbaab, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.height{
+    height: 100vh;
+}
+
+.inside_form{
+    border-radius: 5px;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+
+.black
+{
+    font-weight: bold;
+}
+
+.below-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.margin-left{
+    margin-left: 10px;
+}
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.center h1 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+i{
+    color:blue
+}
+
+form .txt_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.txt_field span::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: 0.5s;
+}
+
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px;
+    color: #2691d9;
+}
+
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%;
+}
+
+.pass {
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    border-color: #2691d9;
+    transition: 0.5s;
+}
+
+.signup_link {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup_link a {
+    color: #2691d9;
+    text-decoration: none;
+}
+
+.signup_link a:hover {
+    text-decoration: underline;
+}
+
+
+/* CSS for the login page*/
+
+
+
+/* CSS for the navbar  */
+
+.btn-outline-danger {
+    margin-left: 84px;
+}
+
+a {
+    text-decoration: none;
+    color: #74bae9;
+}
+
+
+
+#myInput {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 33%;
+    font-size: 16px;
+    padding: 8px 10px 8px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#myInput2 {
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 33%;
+    font-size: 16px;
+    padding: 8px 10px 8px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+
+/* offcanvas styling  */
+
+
+.s-bar-header {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.fontSize {
+    font-size: 1rem;
+}
+
+.fontSizeOneThree {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.fontSize {
+    font-size: 1rem;
+}
+
+.editAndDeleteButtons {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+}
+
+h3 {
+    font-family: Calibri;
+    font-size: 25pt;
+    font-style: normal;
+    font-weight: bold;
+    color: SlateBlue;
+    text-align: center;
+    /* text-decoration: underline */
+}
+
+.tableButton{
+    /* text-decoration: none; */
+    color: blue;
+    background-color: none;
+    border: none;
+}
+
+.rowsInfo{
+    float:right
+}
+
+
+.add_btn {
+    text-align: right;
+}
+
